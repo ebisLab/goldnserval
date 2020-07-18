@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.centered{
+  padding: 0 auto;
+  text-align: center;
+}
+
+.cells:nth-child(2n) {
+  grid-row-end: span 12;
+  height: unset !important;
+  background-position: center center !important;
+}
+
+.content:first-child {
+margin-bottom: 70px;
+background: yellowgreen;
+}
+
+.content:nth-child(3n) {
+  margin-top: 0;
+    }
+
+    .parent { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      grid-template-rows: repeat(4, 1fr); 
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; 
+      height: 350px;
+      max-width: 450px;
+      margin: 0 auto;
+      }
+      .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        background: greenyellow;
+        background-image: url("https://images.unsplash.com/photo-1593945092568-d8ce33052e8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2418&q=80");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* width: 50%;  */
+        /* height: 30vh;  */
+      } 
+      .div2 { grid-area: 1 / 3 / 3 / 5; 
+      background: gold;
+      background-image: url("https://images.unsplash.com/photo-1542513217-0b0eedf7005d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2800&q=80");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      /* width: 50%;  */
+      /* height: 30vh;  */
+    }
+      .div3 { grid-area: 3 / 3 / 5 / 5;
+      background: crimson;
+      background-image: url("https://images.unsplash.com/photo-1519011985187-444d62641929?ixlib=rb-1.2.1&auto=format&fit=crop&w=2452&q=80");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      /* width: 50%;  */
+      /* height: 30vh;   */
+    } 
+
+    .img1_1{
+      background-Image:url("https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3034&q=80");
+      height:100px;
+      background-size:cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .cntrboxes{
+      text-align: -webkit-center;
+      padding: 30px;
+      color:#9b8884;
+    }
