@@ -1,4 +1,6 @@
 import React from 'react'
+import ScrollAnimation from "react-animate-on-scroll";
+
 
 export default function Home() {
     return (
@@ -18,8 +20,24 @@ export default function Home() {
 <section style={{width:"50%", padding: "75px"}}>
 <div>
 
-    <div style={{width:"350px", height:"450px", background: "red"}}></div>
-    <div style={{width:"250px", height: "370px", background:" yellow", position: "relative", bottom: "300px", left: "220px"}}></div>
+<ScrollAnimation
+className="div1_1"
+style={{width:"350px", height:"450px"}}
+            animateIn="fadeIn"
+            animateOut="fadeOut"
+            duration={2.0}
+            delay={0}
+          />
+
+<ScrollAnimation
+className="div1_1 img1_2"
+style={{width:"250px", height: "370px", position: "relative", bottom: "300px", left: "220px"}}
+            animateIn="fadeIn"
+            animateOut="fadeOut"
+            duration={2.0}
+            delay={0}
+          />
+    {/* <div style={{width:"250px", height: "370px", background:" yellow", position: "relative", bottom: "300px", left: "220px"}}></div> */}
 </div>
 
 
